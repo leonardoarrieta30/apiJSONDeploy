@@ -31,5 +31,15 @@
       "description": { "loremSentences": { "minLength": 100, "maxLength": 200 } },
       "numberOfSales": { "regexp": "[1-9][0-9]{1,2}" },
       "supplierId": { "int": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] }
+  },
+  "Dermatologist": {
+      "name": { "regexp": "[A-Z][a-z]{5,10}" },
+      "lastName": { "regexp": "[A-Z][a-z]{5,10}" },
+      "age": { "int": { "min": 25, "max": 60 } },
+      "address": { "loremWords": { "minLength": 5, "maxLength": 20 } },
+      "email": { "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}" },
+      "password": { "regexp": "#[0-9A-F]{6}" },
+      "urlImage": { "regexp": "https://picsum//.photos/seed/[0-9]%7B5%7D/1920/1080" }
   }
+
 }
